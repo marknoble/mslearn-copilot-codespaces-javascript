@@ -123,3 +123,22 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+/* Add a bounce animation to the social icons that uses the keframes below when hovered */
+img.socialIcon:hover {
+  animation: bounce 0.5s infinite;
+}
+
+
+/* Add an amazing bounce anamiation to the social icons that iterates infinitely and has keyframe scales of 1, 1.2, and 1 */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
